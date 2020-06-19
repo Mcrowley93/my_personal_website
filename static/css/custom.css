@@ -1,18 +1,85 @@
+/* GENERAL */
 header {
     padding: 156px 0 100px;
 }
 
-section {
-    padding: 150px 0;
+.top-spacer{
+    padding-top: 5rem;
 }
 
+.bottom-spacer{
+    padding-bottom: 5rem;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-fluid{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* NAVIGATION */
+.navbar{
+    background-color: rgba(255,254,240,0.45);
+}
+
+.navbar-collapse{
+    text-align: right;
+}
+
+.navbar-toggler{
+    margin-left: auto;
+}
+
+i.fas.fa-bars{
+    color: black;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+i.fas.fa-bars:focus,
+i.fas.fa-bars:hover{
+    color: #ffa522;
+}
+
+a.nav-link{
+    color: black;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+}
+a.nav-link:focus,
+a.nav-link:hover{
+    color: #ffa522;
+}
+a.nav-link.active{
+    color: #ffa522;
+}
+
+/* HEADINGS & TEXT */
+h2, h3, h4, h5, h6{
+    text-align: center;
+}
 h1.name {
-    font-size: 4rem;
+    font-size: 4.5rem;
+    padding-top: 3rem;
+}
+h2 {
+    font-size: 2.75rem;
 }
 p.title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: left;
 }
 
+p{
+    color: black;
+    font-size: large;
+}
+
+/* SECTIONS */
 #landing-view {
     background-attachment: fixed;
     background-image: url('../images/developer-image.jpg');
@@ -22,6 +89,18 @@ p.title {
     width: 100vw;
     margin-bottom: 0;
     z-index: 1;
+}
+.landing-backdrop{
+    background-color: rgba(255,255,255,0.25);
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+}
+
+.backdrop{
+    background-color: rgba(255,255,255,0.5);
+    width: 100vw;
+    margin-bottom: 0;
 }
 
 #about {
@@ -36,7 +115,6 @@ p.title {
     background-image: url('../images/wireframe_sketches.jpg');
     background-position: bottom;
     background-size: cover;
-    height: 100vh;
     width: 100vw;
     margin-bottom: 0;
     z-index: 1;
@@ -54,8 +132,108 @@ p.title {
     background-image: url('../images/wooden_desktop.jpg');
     background-position: bottom;
     background-size: cover;
-    height: 100vh;
     width: 100vw;
-    margin-bottom: 0;
     z-index: 1;
+}
+
+#footer {
+    background-attachment: fixed;
+    background-image: url('../images/wooden_desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    width: 100vw;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* CONTACT FORM */
+.contact {
+    margin: 15px 0 15px 0;
+    display: block;
+}
+
+/* BUTTONS */
+.btn-custom {
+    background-color: #ffa522;
+    color: black;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.btn-custom:focus,
+.btn-custom:hover{
+    background-color: #ff7b02;
+}
+
+/* PROJECT CARDS */
+.card-body {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card {
+    background-color: rgba(253,253,253,0.85);
+    border-radius: 25%;
+    margin: 1rem;
+    padding: 15px;
+    align-items: center;
+    z-index: 2;
+    display: block;
+    opacity: 0.9;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.card p{
+    background-color: rgba(255,255,255,0);
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.desktop-icon,
+.github-icon {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: black;
+}
+.social-links {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: white;
+}
+
+.desktop-icon:focus,
+.desktop-icon:hover,
+.github-icon:focus,
+.github-icon:hover,
+.social-links:focus,
+.social-links:hover{
+    color: #ff7b02;
+}
+
+img.word-cloud {
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    img.word-cloud {
+        padding-left: 15%;
+        width: 85%;
+    }
+}
+@media (min-width: 992px) {
+    img.word-cloud {
+        padding-left: 25%;
+        width: 75%;
+    }
 }
