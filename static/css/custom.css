@@ -81,14 +81,15 @@ p{
 
 /* SECTIONS */
 #landing-view {
-    background-attachment: fixed;
     background-image: url('../images/developer-image.jpg');
     background-position: bottom;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-bottom: 0;
-    z-index: 1;
 }
 .landing-backdrop{
     background-color: rgba(255,255,255,0.25);
@@ -104,36 +105,43 @@ p{
 }
 
 #about {
-    background-image: url('../images/me_new.jpg');
+    background-image: url('../images/me1.jpg');
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100vw;
 }
 
 #portfolio {
-    background-attachment: fixed;
     background-image: url('../images/wireframe_sketches.jpg');
     background-position: bottom;
     background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100vw;
     margin-bottom: 0;
-    z-index: 1;
 }
 
 #skills {
     background-image: url('../images/web_design_laptop.jpg');
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100vw;
 }
 
 #contact {
-    background-attachment: fixed;
     background-image: url('../images/wooden_desktop.jpg');
     background-position: bottom;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100vw;
-    z-index: 1;
 }
 
 #footer {
@@ -141,6 +149,9 @@ p{
     background-image: url('../images/wooden_desktop.jpg');
     background-position: bottom;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100vw;
     z-index: 1;
     text-align: center;
@@ -229,6 +240,15 @@ img.word-cloud {
     img.word-cloud {
         padding-left: 15%;
         width: 85%;
+    }
+    #landing-view {
+        background-attachment: fixed;
+    }
+    #portfolio {
+        background-attachment: fixed;
+    }
+    #contact {
+        background-attachment: fixed;
     }
 }
 @media (min-width: 992px) {
