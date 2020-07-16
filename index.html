@@ -9,7 +9,7 @@
     <!--Google Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2&display=swap">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/custom.css">
 </head>
@@ -108,26 +108,29 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="card_parent">
                         <div class="col-sm-6 col-lg-4 project-cards">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row">
+                                    <div class="row" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
                                         <h4 class="card-title">Stripped Bear Gaming</h4>
                                     </div>
                                     <div class="row">
                                         <h6 class="card-subtitle text-muted">HTML, CSS, Bootstrap</h6>
                                     </div>
                                     <br>
-                                    <div class="row d-none d-md-block">
+                                    <div class="row collapse multi-collapse d-sm-none" id="multiCollapseExample1" data-parent="#card_parent">
                                         <p class="card-text">Front-end only responsive website giving everyday/casual gamers the latest gaming news, reviews and upcoming releases.</p>
                                     </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="mx-auto">
-                                            <a href="https://mcrowley93.github.io/strippedbeargamingmilestoneproject/" class="card-link" target="_blank"><i class="fas fa-desktop desktop-icon"></i></a>
-                                            <a href="https://github.com/Mcrowley93/strippedbeargamingmilestoneproject" class="card-link" target="_blank"><i class="fab fa-github github-icon"></i></a>
-                                        </div>
+                                    <div class="row d-none d-sm-block">
+                                        <p class="card-text">Front-end only responsive website giving everyday/casual gamers the latest gaming news, reviews and upcoming releases.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="mx-auto">
+                                        <a href="https://mcrowley93.github.io/strippedbeargamingmilestoneproject/" class="card-link" target="_blank"><i class="fas fa-desktop desktop-icon"></i></a>
+                                        <a href="https://github.com/Mcrowley93/strippedbeargamingmilestoneproject" class="card-link" target="_blank"><i class="fab fa-github github-icon"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -136,13 +139,16 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <h4 class="card-title">Game Sales Dashboard</h4>
+                                        <h4 class="card-title" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Game Sales Dashboard</h4>
                                     </div>
                                     <div class="row">
                                         <h6 class="card-subtitle text-muted">JavaScript, jQuery, HTML, CSS</h6>
                                     </div>
                                     <br>
-                                    <div class="row d-none d-md-block">
+                                    <div class="row collapse multi-collapse d-sm-none" id="multiCollapseExample2" data-parent="#card_parent">
+                                        <p class="card-text">Data dashboard to help future game developers find the most popular games, game-genres and game-publishers on both PS4 and XBoxOne.</p>
+                                    </div>
+                                    <div class="row d-none d-sm-block">
                                         <p class="card-text">Data dashboard to help future game developers find the most popular games, game-genres and game-publishers on both PS4 and XBoxOne.</p>
                                     </div>
                                     <br>
@@ -159,13 +165,16 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <h4 class="card-title">Shared Fitness Database(SFDb)</h4>
+                                        <h4 class="card-title" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Shared Fitness Database(SFDb)</h4>
                                     </div>
                                     <div class="row">
                                         <h6 class="card-subtitle text-muted">Python, Flask, MongoDB</h6>
                                     </div>
                                     <br>
-                                    <div class="row d-none d-md-block">
+                                    <div class="row collapse multi-collapse d-sm-none" id="multiCollapseExample3" data-parent="#card_parent">
+                                        <p class="card-text">A fitness orientated Database, that allows users to find and add exercises with the aim of helping them achieve their fitness goals.</p>
+                                    </div>
+                                    <div class="row d-none d-sm-block">
                                         <p class="card-text">A fitness orientated Database, that allows users to find and add exercises with the aim of helping them achieve their fitness goals.</p>
                                     </div>
                                     <br>
@@ -182,13 +191,16 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <h4 class="card-title">Bear Nation Gaming</h4>
+                                        <h4 class="card-title" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Bear Nation Gaming</h4>
                                     </div>
                                     <div class="row">
                                         <h6 class="card-subtitle text-muted">Django, Python, Postgres</h6>
                                     </div>
                                     <br>
-                                    <div class="row d-none d-md-block">
+                                    <div class="row collapse multi-collapse d-sm-none" id="multiCollapseExample4" data-parent="#card_parent">
+                                        <p class="card-text">Bear Nation Gaming youtube channel companion site, that features an e-commerce merchandise store, reviews and a community blog noticeboard. </p>
+                                    </div>
+                                    <div class="row d-none d-sm-block">
                                         <p class="card-text">Bear Nation Gaming youtube channel companion site, that features an e-commerce merchandise store, reviews and a community blog noticeboard. </p>
                                     </div>
                                     <br>
@@ -205,13 +217,16 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <h4 class="card-title">The Unremarkable Life and Times</h4>
+                                        <h4 class="card-title" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">The Unremarkable Life and Times</h4>
                                     </div>
                                     <div class="row">
                                         <h6 class="card-subtitle text-muted">HTML, CSS, Javascript, Python</h6>
                                     </div>
                                     <br>
-                                    <div class="row d-none d-md-block">
+                                    <div class="row collapse multi-collapse d-sm-none" id="multiCollapseExample5" data-parent="#card_parent">
+                                        <p class="card-text">A blog created by yours truly to share my journey into the world of software development, and to log my misfortunes along the way!</p>
+                                    </div>
+                                    <div class="row d-none d-sm-block">
                                         <p class="card-text">A blog created by yours truly to share my journey into the world of software development, and to log my misfortunes along the way!</p>
                                     </div>
                                     <br>
@@ -252,48 +267,6 @@
                     <img src="static/images/SkillsWordArt.png" class="word-cloud">
                 </div>
             </div>
-<!--            <div class="row">-->
-<!--                <div class="offset-1 col-10 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills html">&nbsp;&nbsp;HTML</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 offset-sm-0 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills css">&nbsp;&nbsp;CSS</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills js">&nbsp;&nbsp;Javascript</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 offset-sm-0 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills python">&nbsp;&nbsp;Python</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills django">&nbsp;&nbsp;Django</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 offset-sm-0 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills flask">&nbsp;&nbsp;Flask</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills mysql">&nbsp;&nbsp;MySQL</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="offset-1 col-10 offset-sm-0 col-sm-5">-->
-<!--                    <div class="skills_container">-->
-<!--                        <div class="skills postgres">&nbsp;&nbsp;Postgres</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="bottom-spacer"></div>
         </div>
     </section>
