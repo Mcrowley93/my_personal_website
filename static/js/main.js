@@ -6,3 +6,5 @@
 $(function() {
     $('.card').matchHeight();
 });
+
+$('.collapse').collapse();
