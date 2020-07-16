@@ -8,3 +8,15 @@ $(function() {
 });
 
 $('.collapse').collapse();
+
+// jQuery allows for the navbar to collapse when clicking outside of the navbar,
+// rather than just on navbar-toggler button click
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
