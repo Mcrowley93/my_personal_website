@@ -7,8 +7,6 @@ $(function() {
     $('.card').matchHeight();
 });
 
-$('.collapse').collapse();
-
 // jQuery allows for the navbar to collapse when clicking outside of the navbar,
 // rather than just on navbar-toggler button click
 $(document).ready(function () {
