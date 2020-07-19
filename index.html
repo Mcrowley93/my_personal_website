@@ -280,6 +280,30 @@
                     <br>
                     <p>
                         If you have a project you wish to collaborate on, or want to get in touch for anything else, then please don't hesitate to fill out the contact form below and get in touch...
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#contactModal">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="contactModalCenterTitle">Please Note...</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Submitting this form will load up your default mail client with the form info input and ready to send. <br>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </p>
                     <form id='contact-form' action="mailto:martin.k.s.crowley@hotmail.co.uk?subject=Connection Request" target="_blank" method="post" enctype="text/plain">
                         <div class="row contact">
@@ -303,7 +327,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <input type="submit" value='Send' class="btn btn-custom mx-auto" data-toggle="tooltip" data-html="true" title="Please note, submitting this form will load up your default mail client with the form info input and ready to send.">
+                            <input type="submit" value='Send' class="btn btn-custom mx-auto">
                         </div>
                     </form>
                 </div>
