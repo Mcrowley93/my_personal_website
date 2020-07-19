@@ -146,7 +146,8 @@ p{
 
 #footer {
     background-attachment: fixed;
-    background-color: rgba(125, 106, 84, 0.76);
+    background-color: rgba(82, 82, 82, 0.4);
+    background-image: none;
     background-position: bottom;
     background-size: cover;
     -webkit-background-size: cover;
