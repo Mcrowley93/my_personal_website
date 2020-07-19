@@ -146,7 +146,7 @@ p{
 
 #footer {
     background-attachment: fixed;
-    background-image: url('../images/wooden_desktop.jpg');
+    background-color: rgba(125, 106, 84, 0.76);
     background-position: bottom;
     background-size: cover;
     -webkit-background-size: cover;
@@ -249,6 +249,9 @@ img.word-cloud {
     }
     #contact {
         background-attachment: fixed;
+    }
+    #footer {
+        background-image: url('../images/wooden_desktop.jpg');
     }
 }
 @media (min-width: 992px) {
